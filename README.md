@@ -29,3 +29,6 @@ Finally, the project aims to systematically evaluate and compare different RAG s
 ## Notebooks:
 
 - [01_naive_rag.ipynb](01_naive_rag.ipynb)
+
+- [02_agentic_rag.ipynb](02_agentic_rag.ipynb)
+
