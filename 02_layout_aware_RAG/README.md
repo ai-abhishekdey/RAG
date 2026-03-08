@@ -1,4 +1,8 @@
-# Layout-Aware RAG for Research Papers using LandingAI ADE
+## Layout-Aware RAG for Research Papers using LandingAI ADE
+
+**Author: Abhishek Dey**
+
+## About:
 
 This project demonstrates a **layout-aware Retrieval Augmented Generation (RAG)** pipeline for research papers. 
 Instead of treating documents as plain text, this pipeline preserves **document layout context** such as **tables, text blocks, and their positions in the PDF**.
@@ -44,13 +48,13 @@ This project uses **LandingAI ADE (Agentic Document Extraction)** to extract str
 ## Sample Layout aware extracted chunks
 
 <p align="left">
-<img src="img/A.png" width="360" height="640">
+<img src="img/A.png" width="582" height="820">
 </p>
 
 ## Sample RAG output
 
 <p align="left">
-<img src="img/B.png" width="360" height="640">
+<img src="img/A.png" width="582" height="820">
 </p>
 
 ## Create Virtual environment
