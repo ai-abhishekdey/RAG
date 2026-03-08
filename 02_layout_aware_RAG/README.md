@@ -54,7 +54,7 @@ This project uses **LandingAI ADE (Agentic Document Extraction)** to extract str
 ## Sample RAG output
 
 <p align="left">
-<img src="img/A.png" width="582" height="820">
+<img src="img/B.png" width="582" height="820">
 </p>
 
 ## Create Virtual environment
