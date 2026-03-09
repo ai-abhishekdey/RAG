@@ -32,6 +32,7 @@ This project uses **LandingAI ADE (Agentic Document Extraction)** to extract str
 - Question answering using LLMs
 - Visual grounding of retrieved evidence
 - Works on research papers and structured PDFs
+- RAG evaluation using LLM-as-a-Judge
 
 ---
 ## Tech Stack
@@ -41,9 +42,21 @@ This project uses **LandingAI ADE (Agentic Document Extraction)** to extract str
 - **OpenAI Embeddings** – semantic search  
 - **LangChain** – RAG orchestration  
 - **PyMuPDF** – PDF rendering and visualization  
-- **Python**
+- **RAGAS** – RAG evaluation using LLM-as-a-Judge
 
 ---
+## RAG Evaluation (LLM-as-a-Judge)
+
+- To assess the quality of the RAG system, this project integrates RAGAS, which uses an LLM-as-a-Judge approach to evaluate generated answers.
+- Instead of relying on manual evaluation, the system automatically scores responses using the following metrics:
+
+### Metric	Description:
+
+- **Faithfulness :**	Measures whether the generated answer is grounded in the retrieved context (hallucination detection).
+- **Answer Relevancy :**	Measures how well the generated answer addresses the user’s question.
+-**Context Precision :**	Evaluates whether the retrieved document chunks are relevant to the query.
+
+**Note:** Evaluation is performed after generating the answer using the retrieved layout-aware document chunks.
 
 ## Sample Layout aware extracted chunks
 

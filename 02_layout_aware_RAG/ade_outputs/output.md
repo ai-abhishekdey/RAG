@@ -1,13 +1,13 @@
-<a id='16f95b33-0f7a-4003-8385-62b0a62591a1'></a>
+<a id='9cecb2a4-1de1-40de-b8de-93758c2d702c'></a>
 
 Mizo Phone Recognition System
 
-<a id='05caaf4b-36d4-4060-998d-72128b6ed2e6'></a>
+<a id='ea829261-dc7d-47f8-8c10-2bb620b3e22a'></a>
 
 Abhishek Dey¹, Wendy Lalhminghlui², Priyankoo Sarmah²,³ , K. Samudravijaya³,
 S. R. Mahadeva Prasanna³,⁴,⁵, Rohit Sinha³,⁴ and S. R. Nirmala¹
 
-<a id='9f0b4f22-3445-4a80-98d1-92bf2fb51906'></a>
+<a id='d7d0826a-9756-46e8-9858-ac20919ac2bb'></a>
 
 1Department of Electronics and Communication Engineering,
 GUIST, Gauhati University, Guwahati -781014, India.
@@ -20,15 +20,15 @@ Indian Institute of Technology Dharwad, Dharwad -580011, India.
 Email: abhishekdey.gu@gmail.com,
 {wendy, priyankoo, samudravijaya, prasanna, rsinha} @iitg.ernet.in, nirmalasr3@gmail.com
 
-<a id='d175c41e-a08e-44eb-bed6-2787a81bb9a0'></a>
+<a id='fa34fd82-b362-436f-b54d-19df562453f8'></a>
 
 Abstract—In this work, we present the creation of a speech corpus in an under-resourced language, namely, Mizo, and report the development of a phone recognition system using state-of-the-art acoustic modelling techniques. The speech corpus consists of Mizo passages spoken by 81 native Mizo speakers. A set of 36 phonetic units have been identified for representing the acoustic phonetic characteristics of the speech signal. Over the past few decades, the Hidden Markov Model (HMM) based acoustic modelling technique is most widely used to capture the temporal variations in the speech data. However, the state observation probabilities in the HMM were generated through multivariate Gaussian Mixture Models (GMMs). Additionally, we have explored two new frameworks in developing the Mizo phone recognition system, namely, the Deep Neural Network (DNN) and the Subspace Gaussian Mixture Model (SGMM). Phone Error Rates (PERs) of 18.1% and 17.5% are observed in DNN-HMM and SGMM-HMM based approaches, respectively, without utilizing any language constraint. PER reduced to 13.9% and 15.7%, respectively, after incorporating the language model information.
 
-<a id='78ca8b4a-d7c9-4e19-bae6-72d98e07a177'></a>
+<a id='4008d466-5ffc-43bf-b2b5-ba6e92e18005'></a>
 
 Index Terms: Mizo language, Phone Recognition System, ASR, DNN.
 
-<a id='fb57ceb3-1ec3-42f6-b15a-60fb796339a0'></a>
+<a id='5771930e-5cbd-4f6b-a78e-467a11ebb566'></a>
 
 I. INTRODUCTION
 
@@ -50,7 +50,7 @@ mode speech data collected from native Assamese speak-
 ers, and tested with speech data recorded in three different
 speaking modes, namely, reading, lecture and conversation.
 
-<a id='677cfe76-13f7-4ac6-bba5-42eb77f6a5a9'></a>
+<a id='390ad665-02e2-4ac6-9864-112690f8629c'></a>
 
 Phone recognition accuracies of 47.3%, 45.3% and 36.1%
 were reported for the read, lecture and conversation modes,
@@ -58,11 +58,11 @@ respectively. It is to be noted that most of these systems
 were developed without utilizing any language or contextual
 information.
 
-<a id='92c988fb-4526-46d7-8324-d46fb375041f'></a>
+<a id='e5e344a1-9e8a-4334-9e1d-b2b77c7a33d0'></a>
 
 A typical speech recognition system uses Hidden Markov Models (HMMs) to model the temporal nature of speech signal while the spectral variations are modelled using multivariate Gaussian Mixture Models (GMMs). In recent years, two new acoustic modelling techniques have been reported in the liter-ature namely, Deep Neural Network (DNN) [6], [7] and Sub-space Gaussian Mixture Model (SGMM) [8], [9]. Both these frameworks have outperformed the GMM based approach. DNN employs multiple hidden layers in an artificial neural network to capture non-linear mapping between attributes of speech signal and phone classes. This leads to a much improved modeling of the acoustic variations resulting in better recognition performance. However, large amount of training data is required to learn the parameters of the DNN. On the other hand, SGMM gives a more compact representation, and provides better results when the amount of training data is small. This motivated us to explore the potential of SGMM and DNN based approaches in the development of the phone recognition system for Mizo.
 
-<a id='8a719b84-a1b8-43ce-addf-ac248d56c0ed'></a>
+<a id='849851ea-3d0f-42c1-8e04-c1bcc2d87b33'></a>
 
 In this work, we report the creation of a read speech corpus
 in Mizo, a Tibeto-Burman language, spoken mainly in the
@@ -72,7 +72,7 @@ phone recognition system using the state-of-the-art acoustic
 modelling techniques and study the influence of language
 model in the overall performance of the system.
 
-<a id='b2b9f538-bebd-4235-bccf-e5a7fe81b863'></a>
+<a id='d51c5393-6f51-4dcf-9791-fac2f901fca5'></a>
 
 The remainder of the paper is organized as follows: In
 Section II, linguistic background of Mizo is briefly stated.
@@ -83,7 +83,7 @@ the experimental studies. Section VI concludes the paper.
 
 <!-- PAGE BREAK -->
 
-<a id='86890ec9-bb02-4299-a410-265f4235bd3a'></a>
+<a id='5b3b2e13-6fae-400a-948f-f945420b8c25'></a>
 
 II. LINGUISTIC BACKGROUND OF MIZO
 
@@ -95,25 +95,25 @@ is a tone language with four contrasting tones namely, High,
 Falling, Rising and Low [10]-[12]. Figure 1 gives an illustra-
 tion of the four Mizo tones.
 
-<a id='782b8502-b025-4f99-bee8-53697ffcf1fd'></a>
+<a id='0583e0e3-11c4-4975-8910-c1d315365d66'></a>
 
 <::line chart: The chart displays four contrastive tones (H, F, R, L) in Mizo. The y-axis is labeled "F0 in Hz" with values ranging from 135 to 175. The x-axis is labeled "Duration in percentage values" with percentages from 0% to 100%. The lines represent: H (solid line, generally high and stable), F (dashed line, starting high and gradually decreasing), R (thick solid line, starting low, dipping slightly, then rising significantly), and L (dotted line, starting mid-range and gradually decreasing). Figure 1: The four contrastive tones in Mizo obtained from 5,529 tokens spoken by 19 speakers.::>
 
-<a id='08838a20-f7de-40e7-81ae-33ce13163a65'></a>
+<a id='74f35022-2bfc-4322-842d-61482ece3f49'></a>
 
 The Mizo phone set used in this study consists of 36 acoustic phonetic units. Table I lists the phonetic units in International Phonetic Alphabet (IPA) notation [13] along with their mapping in the ASCII format. The Mizo phone set may be classified into 6 broad categories: vowels, stops, fricatives, complex sounds (A), complex sounds (B) and sonorants. Table II lists the different phones that fall into respective broad categories.
 
-<a id='7ad28212-f376-4e34-ae02-3b8dbd1bac25'></a>
+<a id='13c15dce-3068-4727-a372-a537ebbbe76a'></a>
 
 ### III. SPEECH DATABASE PREPARATION
 
 The speech corpus used in this work was collected from 81 native Mizo speakers. The speech samples were recorded in the field and in a recording booth in quiet environment using a Shure SM10A head-mounted, close talk microphone connected to a Tasacam DR100-MKII recorder. The sampling frequency was 16 kHz and the resolution was 16 bits/sample. The recorded speech files were divided into small segments of 3-5 secs duration, depending on the pauses. They were manually annotated, using Praat [14], with information into different tiers: phone, word, sentence and tone. The segmented speech files were listened to carefully and the phone boundaries were manually marked and transcribed using the Mizo phone set defined in Table I.
 
-<a id='06718cb2-a119-4223-87cf-17fa24a142b6'></a>
+<a id='f3dd3bda-33ae-48e5-b192-79205f15e16c'></a>
 
 The entire speech corpus is divided into two parts in approximately 8:2 proportion. The major portion is used for training the acoustic models while the minor portion is used for evaluating the efficacy of the trained phone models. It was ensured that the speakers in the training set are different from those in the testing set. The descriptive statistics of the speech corpus is provided in Table III. The reading material used in the corpus consists of 9 different passages. The average number of sentences in a passage is 38. Each speaker read at least two passages.
 
-<a id='29644b08-f67e-4375-8ae6-00d9ec7d11f0'></a>
+<a id='b8e0208a-edce-4502-9542-aca8423cd4f2'></a>
 
 **Table I:** *Inventory of phonetic units*
 <table id="1-1">
@@ -156,7 +156,7 @@ The entire speech corpus is divided into two parts in approximately 8:2 proporti
 <tr><td id="1-1c">Z</td><td id="1-1d">Z</td></tr>
 </table>
 
-<a id='a360e754-f887-441c-ba98-4fa8519eaea0'></a>
+<a id='c3c7fac0-4bf3-4738-85b8-1f6655a435f6'></a>
 
 **Table II:** *Broad categories of Mizo phone set*
 <table id="1-1e">
@@ -169,7 +169,7 @@ The entire speech corpus is divided into two parts in approximately 8:2 proporti
 <tr><td id="1-1r">Sonorants</td><td id="1-1s">r, l, m, n, ng</td></tr>
 </table>
 
-<a id='e81b1a6d-a4d6-4724-a81e-97ac748a73d0'></a>
+<a id='fb662b48-82f2-4853-b8e0-b1f8a4ec9c01'></a>
 
 IV. DEVELOPMENT OF PHONE RECOGNITION SYSTEM
 
@@ -182,7 +182,7 @@ Kaldi.
 
 <!-- PAGE BREAK -->
 
-<a id='18b7537d-ceec-44b6-b412-9fe91282f8da'></a>
+<a id='391c885e-61f3-4c0d-b799-413a3fe03d66'></a>
 
 Table III: *Statistics of speech corpus*
 <table id="2-1">
@@ -194,13 +194,13 @@ Table III: *Statistics of speech corpus*
 <tr><td id="2-h">Female Speakers</td><td id="2-i">31</td><td id="2-j">7</td></tr>
 </table>
 
-<a id='2904262e-31c8-4454-8945-c52b7d7aa55b'></a>
+<a id='7bc86fac-bc44-4e82-ba42-fd6f366ab9ce'></a>
 
 A. Feature extraction and acoustic modelling
 
 Experimental evaluations are carried out using one of the most widely used feature set, the Mel-Frequency Cepstral Coefficients (MFCC) [16]. The MFCC feature vectors are computed from Hamming windowed frames of 25 ms duration with a frame shift of 10 ms and pre-emphasis factor of 0.97. Each feature vector consists of energy and 12 MFCCs (C0-C12). In addition to the 13 dimensional static MFCC features, the Δ and ΔΔ variants are also used in this work. The velocity and acceleration components are appended, in order to capture the dynamic characteristics of the vocal tract system.
 
-<a id='7b2954b9-3133-4b16-ac1e-9324d7a37d21'></a>
+<a id='46f11d11-a989-4ead-9d09-ce207cda280e'></a>
 
 In the current Mizo PRS, the acoustic evidence for a
 phone is derived following 6 different approaches. The base
@@ -211,7 +211,7 @@ Each of the 36 phonetic units listed in Table I is modelled by a
 function of each state is a GMM with 8 mixtures. This PRS
 is labelled as **Monophone** system.
 
-<a id='de679d60-ae5b-4df6-a5ae-1da92b6f27bf'></a>
+<a id='75cfef33-de79-4929-81ae-c28b5a940dfb'></a>
 
 In order to capture contextual information, cross-word
 triphone acoustic models are trained with decision tree-based
@@ -233,18 +233,18 @@ space Maximum Likelihood Linear Regression (fMLLR) [21].
 The next advanced system, labelled as **Tri3**, employs Speaker
 Adaptive Training (SAT) [22] using fMLLR transformations.
 
-<a id='1407e824-3200-4876-a5df-542bd09cf972'></a>
+<a id='914aa5ea-3af4-4491-8e6a-ebfbd2567c48'></a>
 
 We also explored the DNN based acoustic modeling. A feed forward deep neural network is trained using multiple hidden layers that takes time-spliced feature vectors with LDA+MLLT+fMLLR as input, and computes the posterior probabilities over HMM states as output. The specification of the parameters used in training the DNN is detailed in table IV.
 
-<a id='f9643ae3-75c9-47e2-97cd-c74f52fb1ef1'></a>
+<a id='52965175-23b6-455a-82df-82b286d125c6'></a>
 
 In conventional GMM-HMM systems, each state in HMM
 is modelled by an independent GMM. As a result, a large
 number of model parameters are required to be estimated. This
 problem is well addressed by the SGMM [8] based acoustic
 
-<a id='fcb18b6b-b7f3-4d75-9f7a-f07f91bb063d'></a>
+<a id='62f160b2-6807-44fa-8e5e-c12157f8a470'></a>
 
 Table IV: *Parameter specifications of DNN based model*
 <table id="2-k">
@@ -257,7 +257,7 @@ Table IV: *Parameter specifications of DNN based model*
 <tr><td id="2-x">Mini batch size</td><td id="2-y">128</td></tr>
 </table>
 
-<a id='208b8694-50a5-43c1-9f2a-e0aebab4103f'></a>
+<a id='58a17a7b-3d24-43b5-8985-40fef0df2d5c'></a>
 
 modelling framework. In this approach, complex distribution
 of parameters are represented in a compact way. Here, the
@@ -267,7 +267,7 @@ a result, the total number of parameter estimation is reduced,
 which makes it possible to learn the model parameters with
 limited amount of training data.
 
-<a id='5861fcdd-2753-4d22-a661-8ee2f71d7b62'></a>
+<a id='fa70a5c4-5af4-4088-8fbc-b05460a4eb8c'></a>
 
 B. Language modelling
 
@@ -279,28 +279,28 @@ Using Bayes' rule, the term $P(\mathbf{O}|\mathbf{F})$ can be simplified as:
 
 $$P(\mathbf{O}|\mathbf{F}) = \frac{P(\mathbf{F}|\mathbf{O})P(\mathbf{O})}{P(\mathbf{F})} \quad (2)$$
 
-<a id='f9b4b477-c23d-483f-87fa-277e6d9c9373'></a>
+<a id='c8df45d4-23d2-46cc-8f73-760eb9fd8f09'></a>
 
 The likelihood P(F|O) in Equation 2 is determined by the acoustic model, while the prior probability P(O) is determined by the language model. P(F) represents the prior probability of the feature sequence, which is independent of the acoustic and linguistic evidence and can be ignored in the maximization operation. In the present work, the prior probability of the phone sequence P(O) is estimated using statistical bi-gram language model [23]. The bi-gram probabilities are estimated from the phone level transcription of the training data. In practical speech recognition systems, the overall likelihood of the acoustic and linguistic evidence is computed as:
 
 logP(F|O) + αlogP(O) + β|O|
 
-<a id='64d8a813-15ce-4147-aa84-24c3c69516b7'></a>
+<a id='2910d3b3-72e4-4160-8a59-992834c3e133'></a>
 
 Here, $\alpha$ is the language model scaling factor and $\beta$ is the phone insertion penalty [24].
 
-<a id='c27b5220-e0bd-4b05-92ce-afd87ef3aefe'></a>
+<a id='17e092e2-fee3-4a0b-aa1a-f20f2f4d3803'></a>
 
 V. RESULTS AND DISCUSSION
 The Mizo phone recognition system is trained with 7394 utterances collected from 62 native Mizo speakers and eval-uated on a testing set comprising of 1568 utterances. For evaluating the performance of the PRS, the decoded hypothesis is compared with the original reference transcription and the Phone Error Rate (PER) is computed using Equation 3.
 
-<a id='95c07d6b-6411-47c9-b17d-3857e3f074ec'></a>
+<a id='7ec4e838-aa73-4c38-b8b1-7fe242c17d81'></a>
 
 PER = \frac{S + D + I}{N} \times 100 (3)
 
 <!-- PAGE BREAK -->
 
-<a id='a01cae2f-9e6a-4372-a4e6-dfd958fdf5c8'></a>
+<a id='a124d24b-2277-433e-b1ee-d82642849ae9'></a>
 
 Table V: PERs of 6 variants of Mizo PRS, with and without the influence of Language Model (LM)
 <table id="3-1">
@@ -314,31 +314,31 @@ Table V: PERs of 6 variants of Mizo PRS, with and without the influence of Langu
 <tr><td id="3-E">SGMM</td><td id="3-F">0</td><td id="3-G">17.5</td><td id="3-H">1.8</td><td id="3-I">15.7</td><td id="3-J">10.3</td></tr>
 </table>
 
-<a id='f242f8bc-15b3-4767-8ffa-9c5e0b604052'></a>
+<a id='8030d7be-959a-4569-b33c-a7ddd01b5712'></a>
 
 Here, S is the number of substitution errors, D is the number
 of deletion errors, I is the number of insertion errors and N is
 the total number of phone labels in the reference transcription.
 
-<a id='6dc9361d-41cd-4ba1-a3e6-260e563a654b'></a>
+<a id='c8da6990-466c-4d36-ba2b-77c568569005'></a>
 
 Table V shows the PERs of 6 variants of Mizo PRS. The first row of the table shows the PERs of the monophone system. The next 3 rows show the PERs for the 3 types of context-dependent PRS. The 5th row shows the PER of the system when DNN replaced GMMs to model acoustic characteristics of triphone HMMs. The last row corresponds to the case when SGMM replaced conventional GMM to model triphone HMMs.
 
-<a id='b5ce481e-4fac-4565-9de3-7af6f9e9471f'></a>
+<a id='97118a5f-1552-4819-bb98-192337d7592e'></a>
 
 Initially, the experimental evaluations are conducted by setting the language model scaling factor (a) to 0 and phone insertion penalty (3) to 1. By doing this, the overall likelihood of the hypothesis is evaluated without any language constraint. It is observed that the performance of DNN and SGMM based systems are much better than the GMM based system. It is interesting to note that the SGMM based system outperforms all the other systems. The better performance of SGMM system can be attributed to the fact that the amount of speech data used in training the acoustic models is not very large.
 
-<a id='f3a8e640-f1df-4d80-841a-8e556c70b321'></a>
+<a id='9a1be9e3-9d0f-4a5b-999f-3a53794eaef0'></a>
 
 In order to study the influence of language model, the language model scaling factor (α) is varied from 0 to 3 in steps of 0.2 keeping the phone insertion penalty (β) constant at 1. The phone error rates decreased with increasing value of α. The changes are found to be prominent when the value of α is in the range of 1.5-2.5. Beyond 2.5, the performance is saturated. The phone error rates for optimum language model scaling factor (α) is shown in the fifth column of Table V, and the relative improvements after incorporating the language model is shown in the sixth column of Table V. The gradual changes in the PER profiles are shown in Figure 2. A larger reduction in PER of the Mizo PRS is demonstrated when the value of lm-scale is increased to 1.8 as seen in Figure 2.
 
-<a id='30e7a1dd-b4b7-42ab-975f-7ae0829b487e'></a>
+<a id='f110d137-df42-478d-a167-04baceb74cf1'></a>
 
 VI. SUMMARY AND CONCLUSION
 
 In this work, the development and evaluation of a Mizo PRS is presented. We have described the process of data collection for the speech corpus and the process of manual annotation of the collected speech data. Using the labelled data, different acoustic models are trained. In addition to the conventional GMM based approach, we also explored the DNN and SGMM based modelling approaches in the development of the Mizo PRS. The performances of both DNN and SGMM based systems are found to be significantly better than the
 
-<a id='b4b6597f-671e-4771-aa57-24615fa37897'></a>
+<a id='86344ef4-d815-4758-9c16-297173f1b028'></a>
 
 <::transcription of the content
 : chart::
@@ -355,7 +355,7 @@ The chart displays six data series, each represented by a distinct line style an
 Figure 2: PER Profiles with the variations of Im-scale
 ::>
 
-<a id='e50753ea-d902-4907-b4ba-de2f7b47ddd8'></a>
+<a id='e4e01bc0-8679-4dd7-8b67-6849897f0dea'></a>
 
 GMM based approach. Since the amount of training data is
 limited, the SGMM based system performed better than the
@@ -364,13 +364,13 @@ that by incorporating the language model information along
 with acoustic evidence, the overall performance of the phone
 recognition system improves.
 
-<a id='cc73d501-0a20-46bb-8ef0-3e335c81d082'></a>
+<a id='3260c7ea-dde0-4fc9-892f-77b18e7db911'></a>
 
 ACKNOWLEDGMENT
 
 The speech corpus used in this work was developed for an ongoing project titled "Acoustic and Tonal Features based Analysis of Mizo", funded by the Department of Electronics & Information Technology (DeitY), Ministry of Communication & Information Technology (MC&IT), Government of India.
 
-<a id='585e7342-e1e8-44dc-ab12-8630a9e4865c'></a>
+<a id='9acb4950-b53c-474a-82e8-0e7ee5015217'></a>
 
 # REFERENCES
 
@@ -381,7 +381,7 @@ The speech corpus used in this work was developed for an ongoing project titled 
 
 <!-- PAGE BREAK -->
 
-<a id='5ef50830-46c8-4b6f-8ed9-07be0cd50e74'></a>
+<a id='b8a94d2d-2d96-4bc5-baef-1efbd9b404d5'></a>
 
 [5] L. Babykutty, A. George, and L. Mary, "Development of multilingual phonetic engine for four Indian languages," in 2016 International Conference on Next Generation Intelligent Systems (ICNGIS), Sept 2016, pp. 1–3.
 [6] G. E. Hinton, L. Deng, D. Yu, G. Dahl, A. R. Mohamed, N. Jaitly, A. Senior, V. Vanhoucke, P. Nguyen, T. Sainath, and B. Kingsbury, "Deep Neural Networks for Acoustic Modeling in Speech Recognition," Signal Processing Magazine, vol. 29, no. 6, pp. 82–97, November 2012.
@@ -402,7 +402,7 @@ The speech corpus used in this work was developed for an ongoing project titled 
 [21] C. Leggetter and P. Woodland, "Maximum likelihood linear regression for speaker adaptation of continuous density hidden Markov models," Computer Speech & Language, vol. 9, no. 2, pp. 171 – 185, 1995. [Online]. Available: http://www.sciencedirect.com/science/article/pii/S0885230885700101
 [22] T. Anastasakos, J. McDonough, and J. Makhoul, "Speaker adaptive training: A maximum likelihood approach to speaker normalization," in Proceedings of the 1997 IEEE International Conference on
 
-<a id='597ce9b7-68d2-4263-8819-51ebfac5c4d0'></a>
+<a id='32a47193-ad6b-4b75-850a-da779fbed5ee'></a>
 
 Acoustics, Speech, and Signal Processing (ICASSP '97)-Volume
 2 - Volume 2, ser. ICASSP '97. Washington, DC, USA:
