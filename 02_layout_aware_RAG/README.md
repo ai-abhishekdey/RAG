@@ -54,7 +54,7 @@ This project uses **LandingAI ADE (Agentic Document Extraction)** to extract str
 
 - **Faithfulness :**	Measures whether the generated answer is grounded in the retrieved context (hallucination detection).
 - **Answer Relevancy :**	Measures how well the generated answer addresses the user’s question.
--**Context Precision :**	Evaluates whether the retrieved document chunks are relevant to the query.
+- **Context Precision :**	Evaluates whether the retrieved document chunks are relevant to the query.
 
 **Note:** Evaluation is performed after generating the answer using the retrieved layout-aware document chunks.
 
