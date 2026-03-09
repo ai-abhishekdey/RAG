@@ -82,13 +82,13 @@ uv pip install -r requirements.txt
 
 ## Take API keys from 
 
-- OpenAI
+- [OpenAI](https://platform.openai.com/api-keys)
 
-- Langsmith
+- [Langsmith](https://smith.langchain.com/)
 
-- LandingAI
+- [LandingAI](https://landing.ai/)
 
-## Create a .env file 
+## Create .env file 
 
 ```
 OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxx"
